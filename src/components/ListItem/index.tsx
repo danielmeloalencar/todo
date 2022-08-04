@@ -10,7 +10,7 @@ type Props = {
 export const ListItem = ({ item, onChange, onRemove }: Props) => {
 
     return (
-        <C.Container done={item.done}>
+        <C.Container done={item.done} title="Arraste e solte para ordenar ou clique para marcar como concluído">
             <input type="checkbox"
                 id={item.id.toString()}
                 checked={item.done}

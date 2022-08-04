@@ -28,4 +28,19 @@ export const Header = styled.h1`
     padding-bottom: 20px;
 `;
 
+export const Subtitle = styled.h5`
+    margin: 0;
+    padding: 0;
+    color: #CCC;
+    text-align: center;
+    padding-bottom: 10px;
+`;
+
+export const Copyright = styled.h6`
+    margin: 0;
+    padding: 0;
+    color: #0c9cb6;
+    text-align: center;
+    padding-bottom: 20px;
+`;
 

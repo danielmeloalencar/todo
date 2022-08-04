@@ -69,7 +69,8 @@ const App = () => {
     <C.Container>
       <C.Area>
         <C.Header>Lista de Tarefas</C.Header>
-
+        <C.Subtitle>React | TypeScript | Styled Components | No external DragNDrop library | Mobile Ready </C.Subtitle>
+        <C.Copyright>&copy; 2022 Daniel Melo Alencar</C.Copyright>
         <AddArea onEnter={handleAddTask} />
 
         {list.map((item, index) => (
