@@ -29,6 +29,11 @@ const App = () => {
     setList(newList);
   }
 
+  const handleOnRemove = (id: number) => {
+    let newList = list.filter((item)=>item.id !== id)
+    setList(newList);
+  }
+
   return (
     <C.Container>
       <C.Area>
@@ -37,7 +42,12 @@ const App = () => {
         <AddArea onEnter={handleAddTask} />
 
         {list.map((item, index) => (
-          <ListItem key={index} item={item} onChange={handleOnChange}></ListItem>
+          <ListItem 
+            key={index} 
+            item={item} 
+            onChange={handleOnChange}
+            onRemove={handleOnRemove}
+            />
         ))}
 
 
