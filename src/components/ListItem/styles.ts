@@ -5,13 +5,18 @@ type ContainerProps = {
 }
 
 export const Container = styled.div(({done}: ContainerProps) => (`
-display: flex;
+    display: flex;
     background-color: #20212C;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
     align-items: center;
     justify-content: space-between;
+    animation: fadeIn .5s;
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
 
     input {
         width: 25px;
@@ -23,6 +28,7 @@ display: flex;
         color: #ccc;
         text-decoration: ${done ? 'line-through' : 'initial'};
         flex:1;
+        cursor: pointer;
     }
 
     .remove {
