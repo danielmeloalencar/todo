@@ -28,7 +28,7 @@ export const Container = styled.div(({done}: ContainerProps) => (`
         color: #ccc;
         text-decoration: ${done ? 'line-through' : 'initial'};
         flex:1;
-        cursor: pointer;
+        cursor: grab;
     }
 
     .remove {
