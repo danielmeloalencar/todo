@@ -5,7 +5,14 @@ import { ListItem } from './components/ListItem';
 import { AddArea } from './components/addArea';
 
 const App = () => {
-  const [list, setList] = useState<Item[]>([]);
+  const [list, setList] = useState<Item[]>([
+    {id:0, name: 'Marcar como concluído', done:true},
+    {id:1, name: 'Remover tarefa', done:true},
+    {id:2, name: 'Persistir os dados com AsyncStorage', done:false},
+    {id:3, name: 'Exibir mensagem de confirmação ao delelar', done:false},
+    {id:4, name: 'Ordenar com drag and drop', done:false},
+    {id:5, name: 'Melhorar UI', done:false}
+  ]);
 
   const handleAddTask = (taskName: string) => {
     let newList = [...list];
